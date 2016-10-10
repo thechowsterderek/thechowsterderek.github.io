@@ -1,0 +1,157 @@
+* { padding: 0; margin: 0; }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 18px;
+    color:White;
+    background: darkgray;
+    background: -webkit-linear-gradient(#A43931,#1D4350); 
+    background: -o-linear-gradient(#A43931,#1D4350);
+    background: -moz-linear-gradient(#A43931,#1D4350);
+    background:linear-gradient(#A43931,#1D4350);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+body h2{
+    padding-top: 50px;
+}
+
+button{
+    border:0px;
+}
+
+header{
+    text-align:center;
+    background-image: url(headerImg.jpg);
+    height:100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+header h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navigation Bar */
+
+#nav {
+    background-color: #222;
+}
+#nav_wrapper {
+    width: 100%;
+    height:50px;
+    margin: 0 auto;
+    text-align: left;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 200px;
+}
+#nav ul li {
+    display: inline-block;
+}
+#nav ul li:hover {
+    background-color: #333;
+}
+#nav ul li a, visited {
+    color: #CCC;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#nav ul li:hover ul {
+    display: block;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 5px solid #222;
+    border-top: 0;
+    margin-left: -5px;
+}
+#nav ul ul li {
+    display: block;
+}
+#nav ul ul li a:hover {
+    color: #699;
+}
+
+
+#middle{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#contactform{
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+/* Footer */
+
+footer{
+    bottom: 0;
+    width:100%;
+    background-image: url(/img/low_contrast_linen_@2X.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom:15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #FFFFFF;
+    font-family: 'Shift', sans-serif;
+
+}
+
+.footerList{
+    display: inline-block;
+    
+    
+}
+
+.footerList ul{
+    padding:15px 50px 50px 50px;
+    list-style: none;
+}
+
+.footerList ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.footerList ul li a:hover{
+    opacity:.5;
+    text-decoration: underline;
+}
+
+#copyright {
+    font-size: 14px;
+    font-family:monospace;
+    position: center;
+    text-align: center;
+}
+
+#copyright a{
+    text-decoration:none;
+    color: cornflowerblue;
+}
+
+#copyright a:hover{
+    opacity:.5;
+    text-decoration: underline;
+}
