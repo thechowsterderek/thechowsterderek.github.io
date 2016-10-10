@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+    <title>DCCDProductions</title>
+    <meta name ="author" content ="Derek Chow">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href="/css/contactUs.css">
+    <!-- Font Awesome link for Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+    
+  
+<body>
+    <header><h1>DCCD Productions</h1></header>
+    <!--Nav bar, full html/css -->
+    <div id="nav">
+        <div id="nav_wrapper">
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li> <a href="AboutUs.html">About Us </a>
+                </li>
+                <li> <a href="webProjects.html">Projects <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+                    <ul>
+                        <li><a href="webProjects.html">Web Projects</a>
+                        </li>
+                        <li><a href="gameProjects.html">Game Projects</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Nav wrapper end -->
+    </div>
+    <!-- Nav end -->
+    <h2>Contact Us</h2>
+    <div id = "middle">
+    
+    <form id="contactform" role = "form" method="post" action= "//formspree.io/chow-derek@hotmail.com">
+        
+            <label for ="fName">Name</label>
+            <div class = form-group>
+                <input type= "text" class = form-control name="name" placeholder="Enter First Name" maxlength="50" size="20" >
+            </div>
+        
+        
+            <label for ="email">Email</label>
+            <div class = form-group>
+                <input type= "email" class = form-control name="_replyto" placeholder="Enter Email" maxlength="50" size = "20">
+            </div>
+        
+            <label for ="subject">Subject</label>
+            <div class = form-group>
+                <input type= "text" class = form-control name="subject" placeholder="Enter Subject" maxlength="50" size = "20">
+            </div>
+
+
+            <label for ="comments">Message </label>
+            <div class = form-group>
+                <textarea name = "message" maxlength = "1000" rows = "6" cols= "25" placeholder="Your Message"></textarea>
+            </div>
+        
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="thanks.html" />
+            <div class = centering>
+            <button type="submit" name = "submit" class="btn btn-default">Submit</button>
+            </div>
+        </form>
+    
+    
+    </div>
+    
+</body>
+  
+<footer>
+        <div class = "footerList">
+            <h4>Stay Connected</h4>
+            <ul>
+                <li><a href = "https://www.linkedin.com/in/derek-chow-830b81122">Linkedin  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href = "https://github.com/thechowsterderek">Github  <i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href = "http://codepen.io/longarm123/">Codepen  <i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class = "footerList">
+            <h4>Company</h4>
+            <ul>
+                <li><a href = "AboutUs.html">About Us</a></li>
+                <li><a href = "termsAndService.html">Terms And Service</a></li>
+                <li><a href = "contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id = "copyright">
+            Copyright &copy; All Rights Reserved To Their Owners, <a class = "link" href ="termsAndService.html" target = "_blank">User Agreement</a>, <a class = "link" href ="termsAndService.html" target = "_blank">Privacy Policy</a><label>.</label>
+        </div>
+</footer>
+</html>
