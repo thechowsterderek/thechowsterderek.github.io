@@ -176,7 +176,8 @@ header h1{
 }
 
 #aboutMe a{
-    padding-top: 50px;
+    display:block;
+    margin-top: 50px;
     text-decoration: none;
     color: white;
 }
