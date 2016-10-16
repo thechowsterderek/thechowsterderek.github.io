@@ -24,7 +24,7 @@ button{
 
 header{
     text-align:center;
-    background-image: url(headerImg.jpg);
+    background-image: url(/img/headerImg.jpg);
     height:100px;
     background-repeat: no-repeat;
     background-size:cover;
