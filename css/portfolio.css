@@ -179,7 +179,7 @@ header h1{
     display:block;
     margin-top: 50px;
     text-decoration: none;
-    color: white;
+    color: cornflowerblue;
 }
 
 #aboutMe a:hover{
@@ -195,6 +195,10 @@ header h1{
 
 #recentProjects img{
     max-width: 505px;
+}
+
+#recentProjects img:hover{
+    opacity:.5;
 }
 #recentProjects h2, h3{
     padding-bottom: 50px;
@@ -230,6 +234,9 @@ header h1{
     margin-left: 1em;
 }
 
+.imgSources{
+    display:none;
+}
 
 /* Footer */
 
