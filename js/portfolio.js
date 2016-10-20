@@ -1,8 +1,8 @@
 $(document).ready(function(){
     var scrollMagicController = new ScrollMagic.Controller();
-//    if ($( window ).width() <= 1024) {
-//        scrollMagicController.enabled(false);
-//    }
+    if ($( window ).width() <= 1024) {
+        scrollMagicController.enabled(false);
+    }
     
     
     $('.projectDesc').each(function(){
@@ -16,6 +16,7 @@ $(document).ready(function(){
         triggerElement: this,
         duration:150
         })
+        .addIndicators()
         .setTween(tween)
         .addTo(scrollMagicController);
         
