@@ -5,14 +5,15 @@ body {
     padding: 0;
     margin: 0;
     font-family: Arial;
-    font-size: 18px;
+    font-size: 1.125em;
     color:White;
-    background: darkgray;
+    background: #1D4350;
     background: -webkit-linear-gradient(#A43931,#1D4350); 
     background: -o-linear-gradient(#A43931,#1D4350);
     background: -moz-linear-gradient(#A43931,#1D4350);
     background:linear-gradient(#A43931,#1D4350);
     height: 100%;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
@@ -23,9 +24,10 @@ button{
 }
 
 header{
+    font-size:1.5em;
     text-align:center;
     background-image: url(/img/headerImg.jpg);
-    height:100px;
+    height:5.6em;
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -43,8 +45,8 @@ header h1{
     background-color: #222;
 }
 #nav_wrapper {
-    width: 100%;
-    height:50px;
+    font-size:1.25em;
+    height:2.5em;
     margin: 0 auto;
     text-align: left;
 }
@@ -53,7 +55,6 @@ header h1{
     padding: 0;
     margin: 0;
     position: relative;
-    min-width: 200px;
 }
 #nav ul li {
     display: inline-block;
@@ -61,6 +62,11 @@ header h1{
 #nav ul li:hover {
     background-color: #333;
 }
+
+#nav ul li a.active-page{
+    text-decoration: underline;
+}
+
 #nav ul li a, visited {
     color: #CCC;
     display: block;
@@ -73,8 +79,7 @@ header h1{
 #nav ul ul {
     display: none;
     position: absolute;
-    background-color: #333;
-    border: 5px solid #222;
+    background-color: #222;
     border-top: 0;
     margin-left: -5px;
 }
@@ -87,18 +92,15 @@ header h1{
 
 /*Top Banner*/
 
+
 #topBanner{
-    text-align:center;
-    font-size:30px;
-    width:100%;
-    height:250px;
-    margin-top:125px;
-    margin-bottom:125px;
+    font-size:2.3em;
+    height:8em;
+    margin-top:3em;
+    margin-bottom:5em;
 }
 
 #middle{
-    padding-bottom: 50px;
-    padding-top:50px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -124,8 +126,8 @@ header h1{
 /* Social Media List */
 
 #socialMediaWrapper{
-    padding-top:50px;
-    margin-bottom: 25px;
+    padding-top:2.8em;
+    padding-bottom: 0.5em;
 }
 
 #socialMediaWrapper li{
@@ -135,15 +137,15 @@ header h1{
 
 #socialMediaWrapper a{
     display: inline-block;
-    width:100px;
-    height:25px;
+    width:5.6em;
+    height:1.4em;
     background:#c0c0c0;
     border:2px solid black;
     border-radius:5px;
-    font-size:14px;
+    font-size:0.8em;
     text-decoration: none;
     color:#000;
-    line-height:25px;
+    line-height:1.4em;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -157,16 +159,33 @@ header h1{
     transform: scale(1.1);
 }
 
+#contact{
+    padding:0;
+    font-size:0.6em;
+}
+
+#contact li{
+    display: inline;
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+}
+
+
 /* About Me Section */
 
 #aboutMe{
-    margin-bottom: 100px;
+    margin-top: 5.6em;
+    margin-bottom: 5.6em;
 }
+
 #aboutMe img{
-    margin-top:50px;
-    border-radius: 100px;
-    width:150px;
-    height:200px;
+    display:block;
+    
+    text-align: center;
+    margin:0 auto;
+    border-radius: 50px;
+    width:6em;
+    height:8em;
 }
 
 #aboutMe p{
@@ -176,10 +195,7 @@ header h1{
 }
 
 #aboutMe a{
-    display:block;
-    margin-top: 50px;
-    text-decoration: none;
-    color: cornflowerblue;
+    color:cornflowerblue;
 }
 
 #aboutMe a:hover{
@@ -190,25 +206,24 @@ header h1{
 /* Recent Projects Section */
 
 #recentProjects{
-    margin-bottom: 50px;
+    margin-bottom:2.8em;
 }
 
 #recentProjects img{
-    max-width: 505px;
+    max-width: 28em;
+    
 }
 
 #recentProjects img:hover{
     opacity:.5;
 }
+
 #recentProjects h2, h3{
-    padding-bottom: 50px;
+    padding-bottom: 2.8em;
 }
 
 #recentProjects a{
-    margin-top:-50px;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    padding-top: -50px;
+    padding-bottom: 2.8em;
     text-decoration:none;
     color:cornflowerblue;
     
@@ -224,8 +239,8 @@ header h1{
 }
 
 .projectDesc h4,h3, ul{
-    padding-top:50px;
-    padding-bottom: 25px;
+    padding-top:2.8em;
+    padding-bottom: 1.4em;
 }
 
 .projectDesc ul li{
@@ -241,16 +256,16 @@ header h1{
 /* Footer */
 
 footer{
+    text-align: center;
     background-image: url(/img/low_contrast_linen_@2X.png);
     background-repeat: no-repeat;
     background-size:cover;
-    padding-bottom:15px;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-bottom:.84em;
+    padding-top: .84em;
+    padding-left: .84em;
     color: #FFFFFF;
     font-family: 'Shift', sans-serif;
     bottom: 0;
-    width:100%;
 }
 
 .footerList{
@@ -275,7 +290,7 @@ footer{
 }
 
 #copyright {
-    font-size: 14px;
+    font-size: 0.78em;
     font-family:monospace;
     position: center;
     text-align: center;
