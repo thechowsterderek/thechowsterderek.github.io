@@ -6,8 +6,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" type = "text/css" href="css/portfolio.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <!-- Font Awesome link for Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src= "js/ScrollMagic.min.js"></script> 
+    <script src="js/jquery.ScrollMagic.min.js"></script>
+    <script src ="js/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    
 </head>
 
 <body>
@@ -47,7 +55,12 @@
     <div id= "middle">
     <div id = "recentProjects">
         <h2>Journey</h2>
-            <img src = "img/RPGMAKERMAIN.png"/>
+            <img src = "img/RPGMAKERMAIN.png" class = "mainImg"/>
+            <ul class = "imgSources">
+                <li data-src = "img/RPGMAKEROther.png"></li>
+                <li data-src = "img/RPGMAKEROther2.png"></li>
+                <li data-src = "img/RPGMAKERMAIN.png"></li>
+            </ul>
             <div class ="projectDesc">
             <h4>Project Details</h4>
                 <ul>
@@ -61,7 +74,12 @@
             </div>
         
         <h2>Pong 2.0</h2>
-            <img src = "img/Pong2.0Powerups.png"/>
+            <img src = "img/Pong2.0Powerups.png" class = "mainImg"/>
+            <ul class = "imgSources">
+                <li data-src = "img/Pong2.0Main.png"></li>
+                <li data-src = "img/Pong2.0Title.png"></li>
+                <li data-src = "img/Pong2.0Powerups.png"></li>
+            </ul>
             <div class ="projectDesc">
             <h4>Project Details</h4>
                 <ul>
@@ -73,7 +91,11 @@
             </div>
         
         <h2>Only One</h2>
-            <img src = "img/onlyOne.png">
+            <img src = "img/interactiveNovel.png" class = "mainImg">
+            <ul class = "imgSources">
+                <li data-src = "img/onlyOne.png"></li>
+                <li data-src = "img/interactiveNovel.png"></li>
+            </ul>
             <div class ="projectDesc">
             <h4>Project Details</h4>
                 <ul>
@@ -85,7 +107,11 @@
             </div>
         
         <h2>Beg Away</h2>
-            <img src = "img/BegAway%20Main.png">
+            <img src = "img/BegAway%20Main.png" class = "mainImg">
+            <ul class = "imgSources">
+                <li data-src = "img/BegAway%20Title.png"></li>
+                <li data-src = "img/BegAway%20Main.png"></li>
+            </ul>
             <div class ="projectDesc">
             <h4>Project Details</h4>
                 <ul>
@@ -97,7 +123,11 @@
             </div>
         
         <h2>Test Snake</h2>
-            <img src = "img/PygameSnake.png">
+            <img src = "img/PygameSnake.png" class = "mainImg">
+            <ul class = "imgSources">
+                <li data-src = "img/MainPygame.png"></li>
+                <li data-src = "img/PygameSnake.png"></li>
+            </ul>
             <div class ="projectDesc">
             <h4>Project Details</h4>
                 <ul>

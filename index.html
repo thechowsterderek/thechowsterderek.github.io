@@ -6,86 +6,96 @@
     <meta name ="author" content ="Derek Chow">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel = "stylesheet" type = "text/css" href="/css/main.css">
     <!-- Font Awesome link for Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src ="js/intro.js"></script>
 </head>
 
 <body>
-    <header><h1>DCCD Productions</h1></header>
-<!-- Nav bar, full html/css -->
-    <div id="nav">
-        <div id="nav_wrapper">
-            <ul>
-                <li><a href="index.html" class='active-page'>Home</a>
-                </li>
-                <li> <a href="AboutUs.html">About Us<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                    <ul>
-                        <li><a href="portfolio.html">Derek's Portfolio</a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <a href="webProjects.html">Projects <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-
-                    <ul>
-                        <li><a href="webProjects.html">Web Projects</a>
-                        </li>
-                        <li><a href="AboutUs.html">Game Projects</a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <a href="contactUs.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Nav wrapper end -->
+    <div id = "animationIntro">
+        <h1>Hello! Welcome to DCCD Productions</h1>
+        <ul>
+            <li>Where Learning is Our Key to Success</li>
+            <li>Through Our Experiences We Strive to Improve Ourselves</li>
+        </ul>
     </div>
-    <!-- Nav end -->
-    <div id = middle>
-        
-        <div id="topBanner">
-            <h2>Welcome to DCCD Productions</h2>
-            <a href = "#">Learn More</a>
-        </div>
-        <div id = listboxWrapper>
-            <ul>
-                <li>
-                    <a href="webProjects.html">
-                    <div class = "listbox">
-                    <img src="img/monitor-1307227_640.jpg"/> 
-                    <div class = "listboxDesc">
-                        <p>Web Projects</p>
-                    </div>
-                    </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="gameProjects.html">
-                    <div class = "listbox">
-                    <img src="img/joystick-1486908_640.png"/> 
-                    <div class = "listboxDesc">
-                        <p>Game Projects</p>
-                    </div>
-                    </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="contactUs.html">
-                    <div class = "listbox">
-                    <img src="img/thought-1014406_640.jpg"/> 
-                    <div class = "listboxDesc">
-                        <p>Contact Us</p>
-                    </div>
-                    </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-    </div>
+        <header><h1>DCCD Productions</h1></header>
+    <!-- Nav bar, full html/css -->
+        <div id="nav">
+            <div id="nav_wrapper">
+                <ul>
+                    <li><a href="index.html" class='active-page'>Home</a>
+                    </li>
+                    <li> <a href="AboutUs.html">About Us<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><a href="portfolio.html">Derek's Portfolio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <a href="webProjects.html">Projects <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
+                        <ul>
+                            <li><a href="webProjects.html">Web Projects</a>
+                            </li>
+                            <li><a href="AboutUs.html">Game Projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <a href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Nav wrapper end -->
+        </div>
+        <div class="splitter">
+        <!-- Nav end -->
+        <div id = middle>
+
+            <div id="topBanner">
+                <h2>Welcome to DCCD Productions</h2>
+                <a href = "AboutUs.html">Learn More</a>
+            </div>
+            <div id = listboxWrapper>
+                <ul>
+                    <li>
+                        <a href="webProjects.html">
+                        <div class = "listbox">
+                        <img src="img/monitor-1307227_640.jpg"/> 
+                        <div class = "listboxDesc">
+                            <p>Web Projects</p>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gameProjects.html">
+                        <div class = "listbox">
+                        <img src="img/joystick-1486908_640.png"/> 
+                        <div class = "listboxDesc">
+                            <p>Game Projects</p>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">
+                        <div class = "listbox">
+                        <img src="img/thought-1014406_640.jpg"/> 
+                        <div class = "listboxDesc">
+                            <p>Contact Us</p>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
 </body>
 <footer>
         <div class = "footerList">

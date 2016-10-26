@@ -4,7 +4,6 @@ $(document).ready(function(){
         scrollMagicController.enabled(false);
     }
     
-    
     $('.projectDesc').each(function(){
         
         var tween = TweenMax.from(this, 1, {
@@ -21,7 +20,7 @@ $(document).ready(function(){
         
     })
     
-    $(".rpgmaker").on("click",function(){
+    $(".mainImg").on("click",function(){
         var max = ($(this).next().children().length)-1;
         var index = parseInt((Math.random() * (max + 1)), 10);
         var sub = this.src.indexOf("img");
