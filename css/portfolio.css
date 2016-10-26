@@ -23,6 +23,8 @@ button{
     border:0px;
 }
 
+/* Header */
+
 header{
     font-size:1.5em;
     text-align:center;
@@ -105,24 +107,6 @@ header h1{
     margin-right: 10%;
 }
 
-#terms{
-    font-family: "Helvetica Neue",sans-serif;
-    color:black;
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px 20px 20px 20px;
-}
-
-#terms h1, h2{
-    padding-bottom: 20px;
-    padding-top:20px;
-}
-
 /* Social Media List */
 
 #socialMediaWrapper{
@@ -195,6 +179,7 @@ header h1{
 }
 
 #aboutMe a{
+    text-decoration: none;
     color:cornflowerblue;
 }
 
@@ -203,7 +188,9 @@ header h1{
     text-decoration: underline; 
 }
 
+
 /* Recent Projects Section */
+
 
 #recentProjects{
     margin-bottom:2.8em;
@@ -253,6 +240,28 @@ header h1{
     display:none;
 }
 
+
+/* Terms and Condition */
+
+
+#terms{
+    font-family: "Helvetica Neue",sans-serif;
+    color:black;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px 20px;
+}
+
+#terms h1, h2{
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
 /* Footer */
 
 footer{
@@ -288,6 +297,10 @@ footer{
     opacity:.5;
     text-decoration: underline;
 }
+
+
+/* Copyright Section */
+
 
 #copyright {
     font-size: 0.78em;

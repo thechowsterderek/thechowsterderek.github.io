@@ -26,6 +26,10 @@ button{
     border:0px;
 }
 
+
+/* Header Section */
+
+
 header{
     font-size:1.5em;
     text-align:center;
@@ -40,6 +44,13 @@ header h1{
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+
+/* Navigation Bar Section */
+
+
+
 #nav {
     background-color: #222;
 }
@@ -145,6 +156,11 @@ footer{
     opacity:.5;
     text-decoration: underline;
 }
+
+
+/* Copyright Section */
+
+
 
 #copyright {
     font-size: 0.78em;

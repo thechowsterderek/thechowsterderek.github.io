@@ -26,6 +26,11 @@ button{
     border:0px;
 }
 
+
+/* Header Section */
+
+
+
 header{
     font-size:1.5em;
     text-align:center;
@@ -40,6 +45,13 @@ header h1{
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+
+/* Navigation Bar Section */
+
+
+
 #nav {
     background-color: #222;
 }
@@ -96,6 +108,11 @@ header h1{
     margin-right: 10%;
 }
 
+
+/* Contact Form Section */
+
+
+
 #contactform{
     margin-bottom: 5.6em;
     padding-top: 2.7em;
@@ -110,6 +127,8 @@ button{
 
 
 /* Footer */
+
+
 
 footer{
     text-align: center;
@@ -144,6 +163,10 @@ footer{
     opacity:.5;
     text-decoration: underline;
 }
+
+
+/* Copyright Section */
+
 
 #copyright {
     font-size: 0.78em;
