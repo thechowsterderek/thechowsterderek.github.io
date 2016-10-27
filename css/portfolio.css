@@ -43,10 +43,12 @@ header h1{
 
 /* Navigation Bar */
 
-#nav {
+nav {
     background-color: #222;
 }
+
 #nav_wrapper {
+    background-color: #222;
     font-size:1.25em;
     height:2.5em;
     margin: 0 auto;
@@ -72,7 +74,7 @@ header h1{
 #nav ul li a, visited {
     color: #CCC;
     display: block;
-    padding: 15px;
+    padding: 0.833em;
     text-decoration: none;
 }
 #nav ul li:hover ul {
@@ -99,7 +101,7 @@ header h1{
     font-size:2.3em;
     height:8em;
     margin-top:3em;
-    margin-bottom:5em;
+    margin-bottom:3em;
 }
 
 #middle{
@@ -173,7 +175,7 @@ header h1{
 }
 
 #aboutMe p{
-    padding-top:50px;
+    padding-top:2.778em;
     text-align: left;
     
 }
@@ -317,4 +319,26 @@ footer{
 #copyright a:hover{
     opacity:.5;
     text-decoration: underline;
+}
+
+
+/* Media Queries, none on the others after conversion to em */
+
+@media all and (max-width: 599px) and (min-width: 320px) {/* phones */
+    body{
+        background: #1D4350;
+        font-size: 0.5em;
+    }
+    object{
+        width: 320px;
+    }
+    
+    @media screen and (device-width: 601px) and (device-height: 906px){ /* tablets */
+        
+    } 
+    
+    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px){/* giant pcs */
+        
+        
+    } 
 }

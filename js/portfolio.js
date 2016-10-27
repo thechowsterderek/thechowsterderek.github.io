@@ -12,6 +12,7 @@ $(document).ready(function(){
     
         
         new ScrollMagic.Scene({
+        offset: -200,
         triggerElement: this,
         duration:150
         })

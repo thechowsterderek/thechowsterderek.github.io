@@ -295,6 +295,8 @@ footer{
     text-decoration: underline;
 }
 
+/* About Me Section */
+
 #aboutMe{
     margin-bottom: 100px;
 }
@@ -303,9 +305,9 @@ footer{
     display:block;
     text-align: center;
     margin:0 auto;
-    border-radius: 100px;
-    width:150px;
-    height:200px;
+    border-radius: 5.556em;
+    width:8.333em;
+    height:11.111em;
 }
 
 #aboutMe p{
@@ -314,9 +316,21 @@ footer{
     
 }
 
-/* Media Queries */
 
-@media all and (max-width: 599px) and (min-width: 320px) {
+/* Media Queries, none on the others after conversion to em */
+
+@media all and (max-width: 599px) and (min-width: 320px) {/* phones */
     body{
+        background: #1D4350;
         font-size: 0.5em;
     }
+    @media screen and (device-width: 601px) and (device-height: 906px){ /* tablets */
+        
+    } 
+    
+    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px){/* giant pcs */
+        
+        
+    } 
+}
+    
