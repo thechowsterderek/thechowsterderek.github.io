@@ -3,8 +3,8 @@ $(document).ready(function(){
     if ($( window ).width() <= 640) {
         scrollMagicController.enabled(false);
     }
-    
-    $('.projectDesc').each(function(){
+    else{
+        $('.projectDesc').each(function(){
         
         var tween = TweenMax.from(this, 1, {
         autoAlpha:0
@@ -20,6 +20,8 @@ $(document).ready(function(){
         .addTo(scrollMagicController);
         
     })
+        
+    }
     
     $(".mainImg").on("click",function(){
         var max = ($(this).next().children().length)-1;
