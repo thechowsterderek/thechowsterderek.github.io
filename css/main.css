@@ -324,7 +324,10 @@ footer{
         background: #1D4350;
         font-size: 0.5em;
     }
-    @media screen and (device-width: 601px) and (device-height: 906px){ /* tablets */
+    iframe[src*="codepen.io"] {
+    	width: 200px !important;
+	}
+    @media screen and (min-width: 601px) and (max-width: 906px){ /* tablets */
         
     } 
     
