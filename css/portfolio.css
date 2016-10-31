@@ -325,15 +325,12 @@ footer{
 /* Media Queries, none on the others after conversion to em */
 
 @media all and (max-width: 599px) and (min-width: 320px) {/* phones */
-    body{
-        background: #1D4350;
-        font-size: 0.5em;
-    }
     iframe[src*="codepen.io"] {
     	width: 200px !important;
 	}
-    object{
-        width: 320px;
+    body{
+        background: #1D4350;
+        font-size: 0.5em;
     }
     
     @media screen and (device-width: 601px) and (device-height: 906px){ /* tablets */
