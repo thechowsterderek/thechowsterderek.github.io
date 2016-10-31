@@ -187,13 +187,21 @@ footer{
         background: #1D4350;
         font-size: 0.5em;
     }
-    
-    @media screen and (device-width: 601px) and (device-height: 906px){ /* tablets */
-        
-    } 
-    
-    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px){/* giant pcs */
-        
-        
-    } 
 }
+
+@media only screen and (max-device-width : 667px) and (min-device-width : 375px) and (orientation : landscape) {
+    body{
+        background: #1D4350;
+        }
+}
+    
+    
+    
+@media screen and (device-width: 601px) and (device-height: 906px){ /* tablets */
+        
+    } 
+    
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px){/* giant pcs */
+        
+        
+} 
