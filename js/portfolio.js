@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){  //animation on project desc using scroll magic
     var scrollMagicController = new ScrollMagic.Controller();
     if ($( window ).width() <= 640) {
         scrollMagicController.enabled(false);
@@ -23,7 +23,7 @@ $(document).ready(function(){
         
     }
     
-    $(".mainImg").on("click",function(){
+    $(".mainImg").on("click",function(){ //img changer
         var max = ($(this).next().children().length)-1;
         var index = parseInt((Math.random() * (max + 1)), 10);
         var sub = this.src.indexOf("img");

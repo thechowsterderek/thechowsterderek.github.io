@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ //intro animation using greensock
     var width = screen.width;
     var animationIntro=$("animationIntro");
     var mainHeader = $("#animationIntro h1");
