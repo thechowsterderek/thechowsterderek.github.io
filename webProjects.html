@@ -1,90 +1,164 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
+
 <head>
-    <title>DCCDProductions</title>
-    <meta name ="author" content ="Derek Chow">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = "stylesheet" type = "text/css" href="css/portfolio.css">
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <!-- Font Awesome link for Icons -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DCCD Productions</title>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="js/TweenMax.min.js"></script> <!-- GreenSock jquery animations -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src= "js/ScrollMagic.min.js"></script> 
-    <script src="js/jquery.ScrollMagic.min.js"></script> <!-- Scroll Magic jquery animations -->
-    <script src ="js/animation.gsap.min.js"></script>
-    <script type="text/javascript" src="js/portfolio.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Slabo+13px" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-
 <body>
-    <header><h1>DCCD Productions</h1></header>
-<!-- Nav bar, full html/css -->
-    <div id="nav">
-        <div id="nav_wrapper">
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li> <a href="AboutUs.html">About Us <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                    <ul>
-                        <li><a href="portfolio.html">Derek's Portfolio</a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <a href="webProjects.html" class='active-page'>Projects <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
-                    <ul>
-                        <li><a href="webProjects.html" class='active-page'>Web Projects</a>
-                        </li>
-                        <li><a href="gameProjects.html">Game Projects</a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <a href="contactUs.html">Contact Us</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="bio.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bio.html">Biography</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="webProjects.html">Web Projects</a></li>
+                            <li><a href="gameProjects.html">Game Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- Nav wrapper end -->
+        <!-- /.container-fluid -->
+    </nav>
+    <div class=spacing></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="margins big">
+                    <p class="PS center">Web Projects</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Nav end -->
-    <div id="topBanner">
-    <h2>Web Projects</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="PS margins">Fabflix</h1>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="imgs/fabflix1.png" alt="Chania">
+                        </div>
+
+                        <div class="item">
+                            <img src="imgs/fabflix2.png" alt="Chania">
+                        </div>
+
+                        <div class="item">
+                            <img src="imgs/fabflix3.png" alt="Flower">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
+                    <li>Utilizes bootstrap3, HTML5, CSS3, and javascript to create a responsive website that works for all sizes</li>
+                    <li>A mysql database that keeps track of users,movies, quantity of movies, sales, employees and much more to create an organized environment</li>
+                    <li>Web hosted through multiple Amazon Web Service, EC2 instances with Apache2, Tomcat, and so forth to create an optimal solution for the backend problems</li>
+                    <li>JSP files and java servlets was used to create dynamic webpages allowing easy includes and information to be easily transfer from webpage to webpage</li>
+                    <li><a href="fabflix.html">More Info Here</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+
     </div>
-    
-    <div id = middle>
-        
-        <div id = "recentProjects">
-            
-            <h2>Simon Says</h2>
-            
-            <object>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Simon Says</h1>
+                <object>
                 <p data-height="500" data-theme-id="25834" data-slug-hash="vXWXEx" data-default-tab="result" data-user="longarm123" data-embed-version="2" data-pen-title="Simple Simon Says" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/vXWXEx/">Simple Simon Says</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
                 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
             </object>
-            
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that simulate the simon says game, created with HTML, CSS, and Javascript</li>
                     <li>Used css classes and javascript to implement the button lighting animation </li>
                     <li>There are two game modes, one allows mistakes during the sequence while the other one doesn't</li>
                     <li>A max of 20 moves long sequence before the player can reach win condition</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                 </ul>
+
+
             </div>
-            
-            <h2>Twitch Streamer TV</h2>
-            
-            <object>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Twitch Streamer TV</h1>
+                <object>
                 <p data-height="500" data-theme-id="25834" data-slug-hash="QEYvZk" data-default-tab="result" data-user="longarm123" data-embed-version="2" data-pen-title="Twitch TV API" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/QEYvZk/">Twitch TV API</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
                 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
             </object>
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that contains a listing similar to a TV listing</li>
                     <li>Created through HTML, CSS, Javascript, and Jquery</li>
                     <li>Used Twitch.Tv's api to obtain the status of the list of streamers</li>
@@ -92,141 +166,181 @@
                     <li>Search bar function was made with Jquery/Javascript, to allow user to search up their favorite streamer</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                 </ul>
-            </div> 
-            
-            <h2>Tic-Tac-Toe</h2>
-            
-            <object>
-                
-            <p data-height="500" data-theme-id="25834" data-slug-hash="JRAGRE" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/JRAGRE/">TicTacToe Solo</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            </div>
+
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Tic-Tac-Toe</h1>
+                <object>
+                 <p data-height="500" data-theme-id="25834" data-slug-hash="JRAGRE" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/JRAGRE/">TicTacToe Solo</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-            
             </object>
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that simulates the game Tic-Tac-Toe created with HTML, CSS, Javascript, and Jquery</li>
                     <li>AI checks if a win condition is on the board, if not aim for a random win condition</li>
                     <li>Table rows/Table columns are used to simulate the cells</li>
                     <li>Changing the inner HTML allow marks to be placed on clicks with Jquery/Javascript</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                 </ul>
-            </div> 
-            
-            <h2>Podomoro Timer</h2>
-            
-            <object>
-            <p data-height="500" data-theme-id="25834" data-slug-hash="ORxOdz" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/ORxOdz/">Kitchen Timer</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            </div>
+
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Podomoro Timer</h1>
+                <object>
+ <p data-height="500" data-theme-id="25834" data-slug-hash="ORxOdz" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/ORxOdz/">Kitchen Timer</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-            </object>    
-        
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+            </object>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that simulates the kitchen podomoro timer</li>
                     <li>A pomodoro timer simulates the session timer before startng the break in between </li>
                     <li>Uses set interval function to simulate the timer</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                     <li>API error cannot load quote on website, go to codepen instead</li>
                 </ul>
-            </div> 
-            
-            <h2>Calculator</h2>
-            
-            <object>
-            <p data-height="500" data-theme-id="25834" data-slug-hash="VKwVRq" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/longarm123/pen/VKwVRq/">Calculator</a> by Derek Chow (<a href="http://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            </div>
+
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Random Quote Generator</h1>
+                <object>
+                <p data-height="500" data-theme-id="25834" data-slug-hash="BzrdEz" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/BzrdEz/">Quote Generator</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </object>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
+                    <li>A web application that uses QuoteDesign api to obtain a list of quotes and randomly display one</li>
+                    <li>Created with HTML, CSS, Javascript, and Jquery</li>
+                    <li>Tweet Button allows user to share the quote</li>
+                    <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Calculator</h1>
+                <object>
+                <p data-height="500" data-theme-id="25834" data-slug-hash="VKwVRq" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/longarm123/pen/VKwVRq/">Calculator</a> by Derek Chow (<a href="http://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
             </object>
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that calulates user-given equations</li>
                     <li>Max number of integers/signs is 24 due to not fitting on screen</li>
                     <li>Keyboard Keypad input implemented through Javascript and Jquery</li>
                     <li>Made barriers to fix certain bugs in equation problems like two signs, two decimals, etc.</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                 </ul>
-            </div> 
-            
-            <h2>Random Quote Generator</h2>
-            
-            <object>
-            <p data-height="500" data-theme-id="25834" data-slug-hash="BzrdEz" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/BzrdEz/">Quote Generator</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-            
+            </div>
+
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Wikipedia Entry Search</h1>
+                <object>
+                <p data-height="500" data-theme-id="25834" data-slug-hash="xOrVBw" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/xOrVBw/">Wikipedia Entry Search/Viewer</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             </object>
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
-                    <li>A web application that uses QuoteDesign api to obtain a list of quotes and randomly display one</li>
-                    <li>Created with HTML, CSS, Javascript, and Jquery</li>
-                    <li>Tweet Button allows user to share the quote</li>
-                    <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
-                </ul>
-            </div> 
-            
-            <h2>Wikipedia Entry Search</h2>
-            
-            <object>
-            <p data-height="500" data-theme-id="25834" data-slug-hash="xOrVBw" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/xOrVBw/">Wikipedia Entry Search/Viewer</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            
-            </object>
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that uses the Wikipedia api to find articles</li>
                     <li>Created with HTML, CSS, Javascript, and a bit of AJAX</li>
                     <li>Find all articles that is related to the input and created a list for the user</li>
                     <li>Random Generator Button to randomly go to a article on Wikipedia</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                 </ul>
-            </div> 
-            
-            <h2>Current Weather App</h2>
-            
-            <object>
+            </div>
+
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="margins PS">Current Weather Application</h1>
+                <object>
                 <p data-height="500" data-theme-id="25834" data-slug-hash="ZOmdaB" data-default-tab="result" data-user="longarm123" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/ZOmdaB/">Current Weather App</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
                 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-            
             </object>
-            
-            <div class ="projectDesc">
-                <h4>Project Details</h4>
-                <ul>
+                <h3 class="PS miniMargins">Project Details</h3>
+                <ul class="projectList margins Slabo">
                     <li>A web application that uses the geolocation to obtain weather on current GPS location</li>
                     <li>Created with HTML, CSS, Javascript, and Jquery</li>
                     <li>Uses Simple Weather Api that obtains yahoo weather info to obtain info on GPS location</li>
                     <li>Button shows the temperature in Celcius</li>
                     <li>This was one of the mini-projects assigned by FreeCodeCamp for Front-End Certification</li>
                 </ul>
-            </div> 
+            </div>
+
+
+            <div class="col-md-1"></div>
         </div>
+
+
+
     </div>
-    
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 <footer>
-        <div class = "footerList">
-            <h4>Stay Connected</h4>
-            <ul>
-                <li><a href = "https://www.linkedin.com/in/derek-chow-830b81122">Linkedin  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href = "https://github.com/thechowsterderek">Github  <i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href = "https://codepen.io/longarm123/">Codepen  <i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+                <h4>Stay Connected</h4>
+                <ul class="noListStyle">
+                    <li><a href="https://www.linkedin.com/in/derek-chow-830b81122">Linkedin  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/thechowsterderek">Github  <i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="http://codepen.io/longarm123/">Codepen  <i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <h4>Company</h4>
+                <ul class="noListStyle">
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="termsAndService.html">Terms And Service</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-0 col-sm-3"></div>
         </div>
-        <div class = "footerList">
-            <h4>Company</h4>
-            <ul>
-                <li><a href = "AboutUs.html">About Us</a></li>
-                <li><a href = "termsAndService.html">Terms And Service</a></li>
-                <li><a href = "contactUs.html">Contact Us</a></li>
-            </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="center">
+                    &copy;Copyright thechowsterderek.github.io/ All Rights Reserved To Their Owners, <a class="link" href="termsAndService.html" target="_blank">User Agreement</a>, <a class="link" href="termsAndService.html" target="_blank">Privacy Policy</a>. <a href="http://www.freepik.com">Images Used on Website Designed by Creativeart / Freepik</a> and <a href=" subtlepatterns.com"> subtlepattern.com</a> <label>.</label>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <div id = "copyright">
-            Copyright &copy; All Rights Reserved To Their Owners, <a class = "link" href ="termsAndService.html" target = "_blank">User Agreement</a>, <a class = "link" href ="termsAndService.html" target = "_blank">Privacy Policy</a><label>.</label>
-        </div>
+    </div>
 </footer>
+
 </html>
