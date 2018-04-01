@@ -1,2 +1,2 @@
 # thechowsterderek.github.io
-This is the website of DCCD Productions
+This is a personal website to showcase my skills and projects

@@ -1,0 +1,379 @@
+input::-webkit-input-placeholder {
+    color: ghostwhite;
+}
+input:focus::-webkit-input-placeholder {
+    color: #999;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: ghostwhite;
+}
+input:focus:-moz-placeholder {
+    color: #999;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: ghostwhite;
+}
+input:focus::-moz-placeholder {
+    color: #999;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: ghostwhite;
+}
+input:focus:-ms-input-placeholder {
+    color: #999;
+}
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{ background: #fff; }
+
+nav a {
+    font-family:"Oswald";
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.creative a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.creative a::before,
+.creative a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.creative a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.creative a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.creative a:hover::before,
+.creative a:hover::after,
+.creative a:focus::before,
+.creative a:focus::after {
+	opacity: 1;
+}
+
+.creative a:hover::before,
+.creative a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.creative a:hover::after,
+.creative a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+ul{
+    padding:0px;
+}
+
+
+#sectionOne{
+      background: url(../imgs/pexels-photo-220444.jpeg)center center no-repeat ; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+
+#sectionTwo{
+      background:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(../imgs/pexels-photo-936722.jpeg)center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+#sectionThree{
+      background:url(../imgs/california-road-highway-mountains-63324.jpeg)center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+
+#sectionFour{
+ background:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(../imgs/pexels-photo-640783.jpeg)center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.osw{
+    color:ghostwhite;
+    font-family: "Oswald";
+    font-size: 48px;
+    
+}
+
+.inline{
+    display:inline-block;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.spaced{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 10
+}
+
+.move-up{
+    position:relative;
+    bottom:5%;
+    margin-bottom:0;
+    margin-bottom:0;
+}
+
+hr {
+    position:relative;
+    border-top: 2px solid ghostwhite;
+    width:15%;
+    bottom:5%;
+}
+
+.cursive{
+    position: relative;
+    color:white;
+    font-style: italic;
+    display:block;
+    bottom:3%;
+}
+
+.centered{
+    display: block;
+    position:relative;
+    text-align: center;
+    top:5%;
+}
+
+.raleway{
+    color:white;
+    font-size:18px;
+    font-family:'raleway';
+}
+
+form{
+    position:relative;
+    border-radius: 5px;
+    color:ghostwhite;
+    width:50%;
+    height:50%;
+    bottom: 10%;
+}
+
+label{
+    color:ghostwhite;
+    visibility: hidden;
+}
+
+input{
+    padding-bottom: 10px;
+    padding-top:10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: none;
+    width: 100%;
+    border-color:ghostwhite;
+    border-style: none none solid none;
+}
+
+input:focus{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out
+        
+}
+
+textarea{
+    margin-top: 15px;
+    width:100%;
+    border-radius: 5px;
+}
+
+button{
+    background: none;
+    display:block;
+    margin:0px auto;
+    border: solid 2px ghostwhite;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top:5%;
+    padding: 10px;
+    
+}
+
+.links{
+    font-family: "Oswald";
+    color:ghostwhite;
+    font-size: 18px;
+    display: inline-block;
+    background: none;
+    padding:10px 15px 10px 15px;
+    border: solid 2px ghostwhite;
+    border-radius: 5px;
+}
+
+.links:hover{
+    color:black;
+    background:ghostwhite;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out
+}
+
+.linkButton{
+    color:inherit;
+    text-decoration: none;
+}
+
+.intro{
+    position:relative;
+    width:50%;
+    bottom:10%;
+}
+
+.margins{
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.hide{
+    display:none;
+}
+
+.projects{
+    display:block;
+    position: relative;
+    width:80%;
+    margin: 0 auto;
+        bottom:10%;
+    
+}
+
+.container p{
+    margin:0;
+    font-size:1em;
+    font-family: "Oswald";
+}
+
+h3{
+    display:block;
+    position:relative;
+    margin:0;
+}
+
+.extralink{
+    margin-top:5%;
+    text-decoration: none;
+}
+
+.extralink:hover{
+    text-decoration: underline;
+}
+
+
+button:hover{
+        -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out
+}
