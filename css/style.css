@@ -181,7 +181,7 @@ ul{
 .osw{
     color:ghostwhite;
     font-family: "Oswald";
-    font-size: 48px;
+    font-size: 3em;
     
 }
 
@@ -202,7 +202,7 @@ ul{
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    width: 10
+    width: 10;
 }
 
 .move-up{
@@ -236,7 +236,7 @@ hr {
 
 .raleway{
     color:white;
-    font-size:18px;
+    font-size:1.125em;
     font-family:'raleway';
 }
 
@@ -255,10 +255,10 @@ label{
 }
 
 input{
-    padding-bottom: 10px;
-    padding-top:10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding-bottom:0.625em;
+    padding-top:0.625em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     background: none;
     width: 100%;
     border-color:ghostwhite;
@@ -277,7 +277,7 @@ input:focus{
 }
 
 textarea{
-    margin-top: 15px;
+    margin-top: 1em;
     width:100%;
     border-radius: 5px;
 }
@@ -289,16 +289,16 @@ button{
     border: solid 2px ghostwhite;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     margin-top:5%;
-    padding: 10px;
+    padding: 0.625em;
     
 }
 
 .links{
     font-family: "Oswald";
     color:ghostwhite;
-    font-size: 18px;
+    font-size: 1.125em;
     display: inline-block;
     background: none;
     padding:10px 15px 10px 15px;
@@ -342,15 +342,22 @@ button{
 .projects{
     display:block;
     position: relative;
-    width:80%;
+    width:60%;
     margin: 0 auto;
-        bottom:10%;
+    bottom:10%;
     
 }
 
-.container p{
-    margin:0;
+.caption{
+    display:block;
+    position:relative;
+    color:ghostwhite;
+    font-family: "Oswald";
     font-size:1em;
+    bottom:5%;
+}
+.container p{
+    margin:0 auto;
     font-family: "Oswald";
 }
 
@@ -371,7 +378,7 @@ h3{
 
 
 button:hover{
-        -webkit-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
     -webkit-transition: all 0.5s ease-out;
@@ -379,4 +386,82 @@ button:hover{
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    hr {
+    position:relative;
+    border-top: 2px solid ghostwhite;
+    width:40%;
+    bottom:5%;
+}
+.osw{
+    color:ghostwhite;
+    font-family: "Oswald";
+    font-size: 5em;
+    
+}
+.raleway{
+        color:white;
+        font-size:2em;
+        font-family:'raleway';
+    }
+    
+.cursive{
+    font-size:2em;
+    position: relative;
+    color:white;
+    font-style: italic;
+    display:block;
+    bottom:3%;
+}
+    
+.creative a{
+        font-size:3em;
+}
+    
+    .caption{
+        font-size:3em;
+    }
+    
+    .projects{
+        width:80%;
+    }
+    
+    .links{
+        font-size: 1.5em;
+    }
+    
+    form{
+    width:80%;
+}
+    
+    input{
+        font-size:3em;
+        height: 100px;
+        line-height: 40px;
+        margin-top:5%;
+        margin-bottom:5%;
+    }
+    
+    input::placeholder{
+        font-size:1.125 wem;
+    }
+    
+    
+    
+    textarea::placeholder{
+        font-size: 2em;
+    }
+    
+    textarea{
+        font-size:1.5em;
+    }
+    
+    
+    
+    
 }

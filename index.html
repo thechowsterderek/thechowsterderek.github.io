@@ -91,7 +91,7 @@
             <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
                     </div>
-                    <p class = "osw caption">An online app of simon says with sounds, game modes, and score features included. Created with HTML5, CSS3, and JS. </p>
+                    <p class = "caption">An online app of simon says with sounds, game modes, and score features included. Created with HTML5, CSS3, and JS. </p>
                 </div>
             </div>
         
@@ -99,7 +99,7 @@
                 <div class = "container">
             <div class ="projects">            <p data-height="500" data-theme-id="25834" data-slug-hash="QEYvZk" data-default-tab="js,result" data-user="longarm123" data-embed-version="2" data-pen-title="Twitch TV API" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/QEYvZk/">Twitch TV API</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script></div>
-                    <p class = "osw caption">A tv guide application using twitch api, to obtain the status of streamers, their pictures, and many other features. Created with HTML5, CSS3, and JS.</p>
+                    <p class = "caption">A tv guide application using twitch api, to obtain the status of streamers, their pictures, and many other features. Created with HTML5, CSS3, and JS.</p>
                 </div>
             </div>
         
@@ -107,7 +107,7 @@
             <div class = "container">
             <div class ="projects"><p data-height="500" data-theme-id="25834" data-slug-hash="BzrdEz" data-default-tab="js,result" data-user="longarm123" data-embed-version="2" data-pen-title="Quote Generator" class="codepen">See the Pen <a href="https://codepen.io/longarm123/pen/BzrdEz/">Quote Generator</a> by Derek Chow (<a href="https://codepen.io/longarm123">@longarm123</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script></div>
-                                    <p class = "osw caption">A random quote generator grabbing quotes from an api and allowing the user to tweet the quote on their twitter. Created with HTML5, CSS3, and JS. </p>
+                <p class = "caption">A random quote generator grabbing quotes from an api and allowing the user to tweet the quote on their twitter. Created with HTML5, CSS3, and JS. </p>
                 </div>
             </div>
     
@@ -121,17 +121,17 @@
                 
                 <div class="inputGrp">
                     <label>Name</label>
-                    <input name="name" type="text" name="subject" placeholder="Enter Name"> 
+                    <input id = "name" onchange="inputBackground(this.id)"name="name" type="text" name="subject" placeholder="Enter Name"> 
                 </div>
                 <div class="inputGrp">
                     <label>Subject</label>
-                <input  name = "_replyto" type="text" placeholder="Subject Here">
+                <input id = "subject" name = "_replyto" type="text" placeholder="Subject Here">
                 </div>
                 <div class="inputGrp">
                     <label>Email</label>
-                <input type="text" placeholder="name@email.com">
+                <input id = "email" type="text" placeholder="name@email.com">
                 </div>
-                <textarea name = "textArea" placeholder= "Message" rows="4" placeholder="Enter your message . . ." ></textarea>
+                <textarea name = "textArea" placeholder= "Message" rows="6" placeholder="Enter your message . . ." ></textarea>
                 
                 <button type="submit"  value="Send"><strong>SUBMIT</strong></button>
             
@@ -152,8 +152,23 @@
            keyboardScrolling: true,
            verticalCentered: false,
            menu: '#myMenu'
-       });      
+       });  
     });
+    
+    function inputBackground(mainId){
+        var element = document.getElementById(mainId)
+        if(element.value.length == 0){
+
+            element.style.background = "none";
+            element.style.borderRadius = "0px";
+        }
+        else{
+            element.style.backgroundColor = "white";
+            element.style.borderRadius = "5px";
+        }
+    }
+    
+    
     
     
 </script>
