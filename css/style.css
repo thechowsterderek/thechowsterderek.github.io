@@ -145,10 +145,10 @@ ul{
 
 
 #sectionTwo{
-      background:linear-gradient(
+        background:linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),url(../imgs/pexels-photo-936722.jpg)center center no-repeat;
+    ),url(../imgs/pexels-photo-936722.jpeg)center center no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -156,10 +156,10 @@ ul{
 }
 
 #sectionThree{
-      background:linear-gradient(
+            background:linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),url(../imgs/california-road-highway-mountains-63324.jpeg)center center no-repeat;
+            ),url(../imgs/pexels-photo-371633.jpeg)center center no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -171,7 +171,7 @@ ul{
  background:linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),url(../imgs/pexels-photo-640783.jpg)center center no-repeat;
+    ),url(../imgs/pexels-photo-388065.jpeg)center center no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
